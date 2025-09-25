@@ -17,7 +17,7 @@ The application uses a SQLite database with the following two tables:
 | author      | TEXT      | Author of the book |
 | price       | REAL      | Price of the book |
 | stock       | INTEGER   | Number of books available in stock |
-| category    | TEXT      | Category or genre of the book |
+| category    | TEXT      | Category of the book |
 
 **Example rows:**
 | book_id | title        | author | price  | stock | category |
@@ -36,7 +36,7 @@ The application uses a SQLite database with the following two tables:
 | address        | TEXT      | Customer shipping address |
 | book_id        | INTEGER   | Foreign key referencing `Books.book_id` |
 | quantity       | INTEGER   | Number of copies ordered |
-| status         | TEXT      | Status of the order (e.g., Pending, Shipped) |
+| status         | TEXT      | Status of the order (e.g., Pending) |
 
 **Example rows:**
 | order_id | customer_name | phone      | address | book_id | quantity | status |
